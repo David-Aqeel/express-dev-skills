@@ -1,3 +1,4 @@
+// When making new routes, always use const and not var
 var express = require('express');
 var router = express.Router();
 var skillsCtrl = require('../controllers/skills');
@@ -14,7 +15,6 @@ var skillsCtrl = require('../controllers/skills');
 router.get('/', skillsCtrl.index);
 //router.get('/:id', skillsCtrl.show);
 
-module.exports = {
-    router,
-   // show
-};
+// Remove the object from around the router variable
+module.exports = router
+   // show;

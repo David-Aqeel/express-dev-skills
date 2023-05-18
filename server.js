@@ -5,6 +5,7 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
+// When adding in new code you should follow alway add in the newest version so use const and not var
 var skillsRouter = require('./routes/skills');
 
 var app = express();
